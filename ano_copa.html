@@ -1,0 +1,148 @@
+<!---->
+<script>
+    function pulaLinha() {
+
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var limite = parseInt (prompt("Entre com uma data limite de copa"));
+
+    var anoCopa = 1930;
+
+    while (anoCopa <= limite){
+
+        mostra("Teve copa em " + anoCopa)
+        anoCopa = anoCopa + 4
+
+    }
+
+   mostra("FIM")
+
+
+</script><br><hr>
+
+
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function sorteia() {
+
+        return Math.round(Math.random() * 100);
+    }   
+
+    var numeroPensado = sorteia();
+
+    var chute = parseInt(prompt("Já pensei. Qual você acha que é?"));
+
+    if(chute == numeroPensado) {
+
+        mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+    } else {
+
+        var contador = 1;
+
+        while( contador <=10){
+
+            mostra("Já era, você errou!");
+
+            contador = contador + 1; // se retirar o "contador" voce vai cair no loop infinito
+        }
+       
+    } 
+</script><hr>
+
+
+
+<script>  //numeros pares impresso
+
+    function pulaLinha() {
+
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    
+    var numero = 0;
+
+    while(numero <= 10) {
+
+        mostra ("Número " + numero);
+
+        numero  = numero + 2
+
+    }
+
+    mostra ('fim')
+</script> <hr>
+
+<script>  
+
+    
+
+    
+    //Sequencia de numeros retirando 2 numeros do meio
+
+    var numeros = 30;
+
+    while(numeros <= 40){
+        if (numeros == 33){ // NUMERO TIRADO DA SEQUENCIA 
+            numeros = numeros + 1;
+        }
+       if (numeros == 37){// NUMERO TIRADO DA SEQUECIA TAMBEM
+            numeros = numeros + 1;
+
+        }
+        else {
+            mostra(numeros);
+            numeros = numeros + 1; 
+            
+        }
+    }
+
+</script> <hr>
+
+<script> // sequencia de numeros inverso
+    function pulaLinha() {
+
+        document.write("<br><br>");
+       }
+
+      function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+     }
+
+
+     var nume = 5;
+
+        while(nume >= 0) {
+
+        mostra (nume);
+
+        nume  = nume - 1
+
+        }
+</script>

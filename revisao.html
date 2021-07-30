@@ -1,0 +1,82 @@
+
+<!--
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var anoCopa = 1930;
+    var limite = parseInt(prompt("Qual é o ano limite?"));
+
+    while(anoCopa <= limite) {
+
+        mostra(anoCopa + " tem copa!");
+        anoCopa = anoCopa + 4;
+
+    }
+
+    mostra("Ufa! Esses foram os anos de copa até " + limite);
+</script>
+
+-->
+<!--
+<script>    // Login errado com 3 tentativas de entrada
+
+    var loginCadastrado = "alura";
+    var senhaCadastrada = "alura321";
+
+    var maximoTentaivas = 3;
+    var tentativaAtual = 1;
+
+    while(tentativaAtual <= maximoTentaivas){
+
+    var loginInformado = prompt("Informe seu login");
+    var senhaInformada = prompt("Informe sua senha");
+
+    if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
+
+        alert("Bem-vindo ao sistema " + loginInformado);
+
+        tentativaAtual = maximoTentaivas;
+    } else {
+
+        if (tentativaAtual == 3) {
+            alert ("Número permitido de tentativas ultrapassado!");
+        }else{
+
+        alert("Login inválido. Tente novamente ");
+        }
+    }
+
+        tentativaAtual = tentativaAtual + 1 // tirando o numero 1 e colocando mais um "+" ele nao limita a quantidade de tentativas e sim fica no loop infinito para tentar acessar o login novamente.
+    }
+</script>
+-->
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var idade = parseInt(prompt("Digite sua idade"));
+
+    while( isNaN(idade) ) {
+        idade = parseInt(prompt("Digite sua idade"));    
+    }
+
+    alert(idade);
+
+</script>

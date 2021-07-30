@@ -1,0 +1,171 @@
+<h3>Álcool ou Gasolina?</h3>
+<script>
+    var tanque = 40;
+    var caminhoComGasolina = 480;
+    var consumoDeGasolina = caminhoComGasolina/tanque;
+    document.write("O consumo de gasolina é: " + consumoDeGasolina + " km/L" + "<br>");
+
+    tanque = 40;
+    caminhoComAlcool = 300;
+    consumoDeAlcool = caminhoComAlcool/tanque;
+    document.write("O consumo de álcool é: " + consumoDeAlcool + " km/L") ;
+</script><hr>
+
+<script>    //como fazer uma função
+    function mostra (frase) {
+        document.write(frase);
+    }
+
+    var mes = 2016;
+
+    mostra ("Flávio tem " + (mes - 1977) + " anos " + "<br>"); 
+    mostra ("Joaquim tem " + (mes - 1996) + " anos" + "<br>");
+    mostra ("Barney tem " + (mes - 1976) + " anos" + "<br>");
+
+    mes = 2021;
+    mostra ("Sam tem " + (mes - 1997) + ".");
+</script><hr>
+
+<!-- Alerta quando entrar na pagina 
+    <script>
+     function fazPegadinha() {
+        alert("Olá");
+        alert("amiga!");
+        alert("Tá");
+        alert("bastante");
+        alert("entediada?");
+        alert("Em ficar");
+        alert("Clicando em");
+        alert("Ok");
+        alert("né?");
+    }
+    fazPegadinha();
+    fazPegadinha();
+
+</script><br><hr>
+-->
+
+<script>    //fazer o programa pular linha sem precisar repetir o codigo
+    function pulaLinha() {
+
+        document.write("<br><br>");
+    }
+
+    var titulo = "Bem-vindo ao meu programa!";
+
+    document.write("<h1>" + titulo + "</h1>");
+
+    pulaLinha();
+
+    document.write("Vocês não sabem o que tive que aprender para fazer isso!");
+
+    pulaLinha();
+
+    document.write("Contudo, assistindo os vídeos e estudando ...");
+
+    pulaLinha();
+
+    document.write("Eu vou mais longe!");
+
+    pulaLinha();
+</script><hr>
+
+
+<!--
+    <script> 
+    function exibeAlerta(mensagem) {
+        alert("***" + mensagem + "***");
+    }
+
+    var idade1 = 10;
+    var idade2 = 20;
+    var idade3 = 30;
+    var totalIdades = idade1 + idade2 + idade3;
+    var mediaIdades = totalIdades/3;
+
+    exibeAlerta("Total de idades é " + totalIdades);
+
+    exibeAlerta("A média das idades é " + mediaIdades);
+</script>
+-->
+
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+
+    }
+
+    function mostra(frase){
+
+        document.write("*****************************************************************************************************************************")
+        pulaLinha();
+        document.write(frase);
+        pulaLinha();
+        
+    }
+
+    mostra("BEM-VINDO AO MEU PROGRAMA");
+    mostra("ELE REALEMNE FUNCIONA");
+    mostra("EU USEI FUNÇÃO PARA FAZER ISSO");
+
+</script><hr>
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function exibeTitulo(titulo) {
+        document.write("<h1>" + titulo + "</h1>");
+        pulaLinha();
+    }
+
+    function exibeParagrafo(paragrafo) {
+        document.write("<p>" + paragrafo + "</p>");
+        pulaLinha();
+    }
+
+    exibeTitulo("Bem-vindos");
+    exibeParagrafo("Este é um simples programa");
+
+</script><hr>
+
+<script>
+    function pulaLinha(){
+        document.write("<br>");
+    }
+
+    function mostra(texto){
+        document.write(texto);
+       
+    }
+
+    var minhaIdade = 23;
+    var idadeIrmao = 26;
+
+    mostra("Nossa diferença de idade é: " + (minhaIdade - idadeIrmao));
+    pulaLinha();
+
+</script><hr>
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(texto) {
+        document.write(texto);
+        pulaLinha();
+    }
+    var idadeMediaQuandoTemFilho = 28;
+    var anoAtual = 2021;
+    var quantidadeDeGeracoes = (anoAtual - 1500) / idadeMediaQuandoTemFilho;
+
+    mostra("Quantidade de geraçoes real: " + quantidadeDeGeracoes); 
+
+    mostra("Quantidade de geraçoes arredondando: " + Math.round (quantidadeDeGeracoes));
+    
+
+</script>

@@ -1,0 +1,64 @@
+
+<script>
+    function pulaLinha() {
+
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var nome = prompt("Nome");
+    var vitoria = parseInt (prompt("Numero de vitorias"));
+    var empates = parseInt (prompt(nome + ", Numero de empates")); // a função parseInt serve para converter um texto para numero. Se eu uso o prompt ele me retorna em string(texto).Deixa de ser uma concatenação e passa a ser uma soma
+
+    var pontos = vitoria * 3 + empates
+
+    var numero = 10;
+
+    mostra (nome + ", os pontos do seu time é " + pontos)
+    
+    if (pontos > 28){
+
+        mostra("Seu time está melhor do que o ano passado.");
+    }
+    if (pontos < 28){
+
+        mostra("Seu time está pior que o ano passado.");
+    }   
+    if (pontos == 28){
+
+        mostra("Seu time está igual ao ano passado.");
+    }
+    
+    mostra("FIM");
+
+</script><hr>
+
+
+
+<!--comentario-->
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var convidados = parseInt (prompt("Número de convidados"));
+    var vips = parseInt (prompt("Número de convidados VIP's"));
+
+    var total = convidados + vips;
+
+    mostra("O total de convidados é " + total);
+
+</script><br><hr>
+
+
+

@@ -1,0 +1,33 @@
+
+
+<input/>
+<button>Compare com o meu segredo</button>
+
+<script>
+    var segredo = Math.round(Math.random() * 10);
+
+    var sam = document.querySelector("input");//querySelector o "S" sempre precisa ser maiúsculo
+    sam.focus();
+
+    function verifica(){    
+        if (sam.value == segredo){
+            alert("você acertou");
+        }else {
+            alert("você errou")
+        }
+        sam.value = ""; // Lembrar que aqui se usa o nome da variavel que esta no começo. limpar o valor colocado e deixar em branco.
+        sam.focus(); //Quando aparece o "alert" e aperta "ok" ele já retoma para a caixa de texto novamente
+    }
+
+    var button = document.querySelector("button"); // como executar uma função do HTML no JAVASCRIP
+    button.onclick = verifica;
+    
+</script>
+
+<script>
+    var letras = ['A', 'B', 'C', 'D'];
+
+    for( var i = 0; i < letras.length; i++ ) {
+        alert(letras[i]);
+}
+</script>

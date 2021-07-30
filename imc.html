@@ -1,0 +1,201 @@
+<script>
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(frase){
+        document.write(frase); 
+        pulaLinha();
+        
+    }
+
+    function calculaImc(peso, altura){
+
+        var imc = peso / (altura * altura);
+        mostra("O IMC calculado é: " + imc)
+    }
+  
+    calculaImc(73, 1.80);
+    calculaImc(80, 1.90);
+
+</script><hr>
+
+<script>
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(frase){
+        document.write(frase); 
+        pulaLinha();
+        
+    }
+
+    function calculaImc(peso, altura){
+
+        var imc = peso / (altura * altura);
+        return imc;
+    }
+  
+    var imcSam = calculaImc(80, 1.80);
+    var imcAmigo = calculaImc(100, 1.80);
+
+    mostra("meu IMC é: " +  imcSam);
+    mostra("O IMC do meu amigo: " + imcAmigo);
+
+</script><hr>
+
+<script> //como colocar para o resultado não sair indefinido e sim com o valor do IMC certo. Acrescenta o return na função. 
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+
+        var imc = peso / (altura * altura);
+        return imc;
+    }
+
+    var imcCalculado = calculaImc(1.77, 75);
+    mostra("O meu IMC é : " + imcCalculado);
+
+</script> <br><hr>
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+
+        return peso / (altura * altura);
+
+    }
+
+    var totalImc = calculaImc(1.71, 73) + calculaImc(1.72, 68);
+
+    mostra ("A soma dos ICMS's é: " + totalImc);
+
+</script><br><hr>
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+    }
+
+    function calculaImc(altura, peso) {
+
+        return peso / ( altura * altura );
+    }
+    var imcCalculado = calculaImc(1.63, 48);
+    
+    mostra("O meu IMC é " + imcCalculado + "<br>");
+
+    mostra("O meu IMC é " + calculaImc(1.63, 48));
+    
+</script><br><hr>
+
+<script> 
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+
+        return peso / ( altura * altura );
+    }
+    var nome = prompt("Informe seu nome") // usando o comando prompt a gente consegue fazer o usuario do programa colocando suas proprias informaçoes sem precisar alterar codigo
+    var alturaInformada = prompt(nome + ", Informe sua altura");
+    var pesoInformao = prompt(nome + ", Informe seu peso");
+
+    var imc = calculaImc(alturaInformada, pesoInformao);
+
+    mostra(nome + ", O seu IMC é: " + imc);
+
+    if (imc < 18.5){
+
+        mostra(" Você está abaixo do peso" );  
+    }
+
+   if (imc >= 18.6 && imc <= 24.9){ // usando o "e" comercial é como se fosse dois if
+
+            mostra(" Seu peso está normal" );
+    }
+
+    if (imc >= 25.0 && imc <= 29.9){
+
+            mostra(" Levemente acima do peso" );
+    }
+
+    if (imc >= 30.0 && imc <= 34.9){
+
+            mostra(" Obesidade grau I");
+    }
+
+    if (imc >= 35.5 && imc <= 39.9){
+
+            mostra(" Obesidade grau II (severa)");
+    }
+
+    if (imc > 40){
+
+        mostra(" Obesidade grau III (mórbida)");
+    }
+
+
+    
+</script><br><hr>
+
+
+
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function a(texto) {
+
+        return "(" + texto + ")";
+    }
+
+    function b(texto) {
+
+        return "@" + texto + "@";
+    }
+
+    function c(nome, sobrenome) {
+
+        return b(nome + " " + a(sobrenome));
+
+    }
+
+    var resultado = c("Sam", "Martins");
+
+    mostra(resultado);
+
+</script>

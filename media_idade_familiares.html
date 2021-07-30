@@ -1,0 +1,51 @@
+<script>
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var idadePai = 56;
+    var idadeMae = 57;
+    var idadeParley = 26;
+    var idadeElida = 25;
+    var idadeSam = 23
+
+    var totalIdades = (idadePai + idadeMae + idadeParley + idadeElida + idadeSam);
+    var mediaIdades = totalIdades / 5;
+
+    mostra ("Total de média das idades casa " + mediaIdades);
+
+</script> <hr>
+
+<script>
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var quantidadePessoas = parseInt(prompt("Quantas pessoas possui na sua casa?"));
+    
+    var numero = 1;
+
+    var totalIdade = 0;
+
+    while (numero <= quantidadePessoas){
+        
+        var idade = parseInt(prompt("Informe a idade"));
+        totalIdade = totalIdade + idade;
+        numero++;
+    }
+
+    var mediaDasIdades = totalIdade/quantidadePessoas;
+
+    mostra ("A média das idades é de: " + mediaDasIdades)
+
+</script>

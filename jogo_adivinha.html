@@ -1,0 +1,88 @@
+
+<script>
+     function pulaLinha() {
+
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var numeroPensado = Math.round(Math.random() * 10); 
+
+    var tentativas = 1;
+
+    while(tentativas <= 3) {
+
+        var chute = parseInt(prompt("Já pensei em um número. Qual você acha que é?!"));
+
+        if (chute == numeroPensado) {
+
+            mostra("UAU!!! Você acertou, pois pensei no numero " + numeroPensado);
+            break; // Quando se usa o break ele não executa mais nenhuma linha. serve exatamente para poder "finalizar" o programa
+
+    } else {
+
+            mostra( "O numero " + chute + " voce errou. O numero pensado foi " + numeroPensado);
+        }
+        tentativas++;
+    }
+</script><br><hr> 
+
+
+
+<!--
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var quantidadeCarbono1 = parseInt(prompt("Quantidade de carbono substância 1"));
+
+    var quantidadeCarbono2 = parseInt(prompt("Quantidade de carbono substância 2"));
+
+    quantidadeCarbono2 = quantidadeCarbono2 + 2;
+
+    if(quantidadeCarbono1 == quantidadeCarbono2 ) {
+
+        mostra("Acho que são substâncias parecidas");
+
+    } else {
+
+        mostra("São substâncias bem diferentes");
+    }
+
+</script> 
+
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var idade = parseInt(prompt("Qual é sua idade?"));
+    var temCarteira = prompt("Tem carteira? Responda s ou n");
+
+    if (idade >= 18 && temCarteira == "s"){
+            mostra("Pode dirigir");
+    }else{
+        mostra("Não pode dirigir");
+    }
+
+</script>
+
+-->
